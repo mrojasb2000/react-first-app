@@ -1,6 +1,6 @@
 import '../components/twitter-card.css'
 
-export function TwitterCard ({ formatUserName, username, user, avatar }) {
+export function TwitterCard ({ formatElement, formatUserName, username, user, avatar }) {
   const imageSrc = `https://api.dicebear.com/7.x/adventurer/svg?seed=${avatar}`
   
   return (
@@ -10,6 +10,7 @@ export function TwitterCard ({ formatUserName, username, user, avatar }) {
             <div className='tw-followCard-info'>
             <strong>{user}</strong>
             <span className='tw-followCard-info-username'>{formatUserName(username)}</span>
+            {formatElement}
             </div>
             </header>
 
