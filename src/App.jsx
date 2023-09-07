@@ -6,10 +6,10 @@ export function App () {
     const formatElement = <span>Aprendiendo React</span>
     return (
         <div className="App">
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='Bandit' />
+        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='Bandit' initialIsFollowing/>
         <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='bandit' />
         <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='a' />
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='b' />
+        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='b' initialIsFollowing/>
         <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='c' />
         </div>
     )
