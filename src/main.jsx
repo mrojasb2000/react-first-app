@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { TwitterCard } from '../components/twitter-card.jsx'
 import './index.css'
+import { App } from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TwitterCard username='Mauricio Rojas' user='mavrodev' avatar='Bandit' />
-    <TwitterCard username='Mauricio Rojas' user='mavrodev' avatar='bandit' />
+   <App />
   </React.StrictMode>,
 )
