@@ -4,13 +4,47 @@ import { TwitterCard } from "../components/twitter-card";
 export function App () {
     const formatUserName = (username) => `@${username}`
     const formatElement = <span>Aprendiendo React</span>
+    const users = [
+        {
+            user: 'Mauricio Rojas',
+            username: 'mavrodev',
+            avatar: 'Bandit',
+            isFollowing: true
+        },
+        {
+            user: 'Tamara Rojas',
+            username: 'tamydev',
+            avatar: 'a',
+            isFollowing: false
+        },
+        {
+            user: 'Fernanda Rojas',
+            username: 'ferdev',
+            avatar: 'b',
+            isFollowing: false
+        },
+        {
+            user: 'Carolina Magaña',
+            username: 'carodev',
+            avatar: 'c',
+            isFollowing: true
+        }
+    ]
     return (
         <div className="App">
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='Bandit' initialIsFollowing/>
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='bandit' />
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='a' />
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='b' initialIsFollowing/>
-        <TwitterCard formatElement={formatElement} formatUserName={formatUserName} user='Mauricio Rojas' username='mavrodev' avatar='c' />
+            {
+                users.map(({user, username, avatar, isFollowing}) => (
+                    <TwitterCard 
+                        formatElement={formatElement} 
+                        formatUserName={formatUserName} 
+                        user={user} 
+                        username={username} 
+                        avatar={avatar} 
+                        initialIsFollowing={isFollowing}
+                        key={username}
+                    />
+                ))
+            }
         </div>
     )
 }
