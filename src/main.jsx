@@ -5,7 +5,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <TwitterCard userName='Mauricio Rojas B' user='@mavrodev' userAvatarUrl='Bandit' />
-    <TwitterCard userName='Mauricio Rojas B' user='@mavrodev' userAvatarUrl='Gizmo' />
+    <TwitterCard userName='Mauricio Rojas' user='@mavrodev' userAvatarUrl='Bandit' />
   </React.StrictMode>,
 )
