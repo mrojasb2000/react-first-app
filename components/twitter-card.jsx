@@ -6,8 +6,10 @@ export function TwitterCard ({ username, user, avatar }) {
         <article className='followCard'>
             <header className='tw-followCard-header'>
             <img className='tw-followCard-avatar' src={imageSrc} alt="avatar" />
+            <div className='tw-followCard-info'>
             <strong>{username}</strong>
             <span className='tw-followCard-info-username'>@{user}</span>
+            </div>
             </header>
 
             <aside>
